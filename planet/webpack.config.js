@@ -14,7 +14,7 @@ module.exports ={
       sourceMap: false
     })
   ],
-  defServer: {
+  devServer: {
     contentBase: './js'
   }
 }
