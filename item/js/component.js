@@ -15,7 +15,7 @@ module.exports = {
         return m('div', {class: 'items'}, [
           m('a', {class: 'name', role: 'button', 'data-toggle': 'collapse', 'data-parent': '#accordion', href: '#' + i.id, 'aria-controls': i.id}, i.name),
           m('div', {id: i.id, class: 'collapse'}, [
-            m('img', {src: i.url}),
+            m('img', {src: i.url, class: 'img-responsive center-block'}),
             m('div', {class: 'description'}, i.description)
           ])
         ]);
