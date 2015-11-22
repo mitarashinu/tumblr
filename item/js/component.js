@@ -1,4 +1,5 @@
 var m = require('mithril');
+var numeral = require('numeral');
 var model = require('./model');
 
 module.exports = {
@@ -17,7 +18,8 @@ module.exports = {
           m('div', {id: i.id, class: 'collapse'}, [
             m('img', {src: i.url, class: 'img-responsive center-block'}),
             m('div', {class: 'description'}, i.description)
-          ])
+          ]),
+          m('div', {class: 'price'}, numeral(i.price).format('0,0') + 'yen')
         ]);
       })
     );
