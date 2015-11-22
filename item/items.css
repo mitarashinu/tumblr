@@ -1,4 +1,8 @@
-/* navbar */
+body {
+  font-family: Helvetica , "游ゴシック" , "Yu Gothic" , sans-serif;
+  font-size: 14pt;
+}
+
 nav a, nav a:hover, nav a:visited{
   color: black;
 }
@@ -21,12 +25,6 @@ ul.navbar-nav a:hover {
 
 .navbar-me .navbar-toggle .icon-bar {
   background-color: #888;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
 }
 
 img {
